@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Weather App By Shaheb</title>
+    <link rel="icon" href="img/favicon.png" id="faviconIcon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu" >
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html"> <img src="http://openweathermap.org/img/wn/11d@2x.png" alt="logo"> </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="menu_icon"><i class="fas fa-bars"></i></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Weather APP</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="btn_1 d-none d-lg-block" href="#">FollowUs</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+
+    <!-- banner part start-->
+    <section class="banner_part"  id="banner_part_dynamic_img">
+        <div class="container">
+            <div class="row">
+                 
+                <div class="col-lg-12">
+                    
+                <div class="col-sm-9">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                           
+                             
+                                <h5 id="condition" style="color:rgb(0, 0, 0); background: #ffffffb8; padding:3px;">Current Weather <img src="http://openweathermap.org/img/wn/50d@2x.png" id="icon" width="80" height="auto">
+                                <span id="currentTime"></span></h5>
+                             
+                              <ul style="color:rgb(15, 15, 15); font-size:20px; background: #ffffffb8; padding:10px;" class="fixMob">
+                                <li id="dateTime" style="color:rgb(0, 0, 0); font-size: 25px; font-weight:bold;"></li>
+                                <li id="details"></li>
+                               
+                              
+                               </ul>
+   
+
+                        </div>
+
+                    </div>
+                </div>
+
+             
+
+
+                 
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+    <!-- banner part start-->
+    <section class="search_your_country">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="search_form">
+                        <form action="#">
+                            <div class="form-row">
+                                <div class="col-lg-9">
+                                    <div class="search_form_iner">
+                                        
+
+                                        <input type="text" class="form-control" placeholder="Please Enter City or Country" aria-label="RPlease Enter City or Country" aria-describedby="button-addon4" id="weatherInputForm">
+ 
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="#" class="search_btn" id="weatherInputFormByBtn">search</a>
+                                </div>
+                            </div>
+                            <span style="color:#bd08ff">Please Hit Enter to Get Result, of your desired location</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="display: none;">
+                <div class="col-lg-12 search_heading" style="text-align: center;">
+                    <h1>Recently Search Histrory</h1>
+                </div>
+
+ 
+                <div class="col-sm-9" id="masterHistory">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                           
+                             
+                                <h5 id="condition2" style="color:rgb(0, 0, 0); background: #ffffffb8; padding:3px;">Current Weather <img src="" id="icon2" width="80" height="auto">
+                                <span id="currentTime2"></span></h5>
+                             
+                              <ul style="color:rgb(15, 15, 15); font-size:20px; background: #ffffffb8; padding:10px;" class="fixMob">
+                                <li id="dateTime2" style="color:rgb(0, 0, 0); font-size: 25px; font-weight:bold;"></li>
+                                <li id="details2"></li>
+                               
+                              
+                               </ul>
+   
+
+                        </div>
+
+                    </div>
+                </div>
+
+               
+             
+            </div>
+        </div>
+        <img src="img/animate_icon/Shape-1.png" alt="" class="feature_icon_1">
+        <img src="img/animate_icon/Shape-2.png" alt="" class="feature_icon_2">
+    </section>
+    <!-- banner part start-->
+
+     
+    <!--::footer_part start::-->
+    <footer class="footer_part">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_footer_part">
+                        <h4>About Agency</h4>
+                        <p>The world has become so fast paced that people don’t want 
+                        to stand by reading a page of information, they would much 
+                        rather look at a presentation and understand the message. 
+                        It has come to a point where images</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_footer_part">
+                        <h4>Navigation Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">team</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_footer_part">
+                        <h4>Newsletter</h4>
+                        <p>Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days
+                            open
+                        </p>
+                        <div id="mc_embed_signup">
+                            <form target="_blank"
+                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                method="get" class="subscribe_form relative mail_part">
+                                <input type="email" name="email" id="userInput" placeholder="Email Address"
+                                    class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = 'Email Address'">                           
+                                    <button type="submit" name="submit" id="newsletter-submit"
+                                    class="email_icon newsletter-submit button-contactForm" onclick="getInputValue();"><i
+                                        class="far fa-paper-plane"></i></button>
+                                <div class="mt-10 info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="copyright_text">
+                        <P><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script>2020 All rights reserved | <span style="color:#F8F5F5 !important">This template is made with <em class="ti-heart" aria-hidden="true"></em> by <a href="https://colorlib.com" target="_blank"  style="color:#F8F5F5 !important">Colorlib</a><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span></P>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer_icon social_icon">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="single_social_icon"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="single_social_icon"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="single_social_icon"><i class="fas fa-globe"></i></a></li>
+                            <li><a href="#" class="single_social_icon"><i class="fab fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/overlay_2.png" alt="#" class="footer_overlay">
+    </footer>
+    <!--::footer_part end::-->
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- slick js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="https://unpkg.com/axios@0.19.2/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+
+</html>
